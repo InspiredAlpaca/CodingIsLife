@@ -57,7 +57,6 @@ line-height: 50px;
 
 .sect{
   height:100%;
-  background-color: cyan;
   background-size:cover;   /*make the background cover only that div*/
   background-attachment: fixed; /*Divs are still lined up. But bg-attachment, attach them to the top of the page. But as the div comes up. It reveals the div which reveals the actual image*/
 
