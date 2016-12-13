@@ -1,0 +1,103 @@
+/*Get rid of all default padding and margin*/
+/*This selects all element of webpage*/
+*{
+  /*no margin at any side*/
+
+  margin: 0px;
+  padding 0px;
+  list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin-bottom: 20px;
+}
+
+/*By default it does not have a height*/
+html,body{
+  height:100%;
+}
+
+/*we know all the images are 100% wide*/
+nav{
+  /*you loses your width when you set it to fixed*/
+  position: fixed;
+  height:50px;
+  width:100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 99; /*Make sure other things do not overlap*/
+    text-align: center;
+
+}
+.intro{
+  width: 80%;
+  position:absolute;
+  top:40%;
+  left:10%;
+  height:20%;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 50px;
+  color:white;
+  text-align: center;
+  line-height:300%;
+}
+
+div nav ul{
+  text-align: center;
+}
+
+nav a{
+  margin-left: 20px;
+  text-decoration: none;
+  font-style: normal;
+  color:#fff;
+  font-family: monospace;
+  font-size: 22;
+line-height: 50px;
+}
+
+.sect{
+  height:100%;
+  background-color: cyan;
+  background-size:cover;   /*make the background cover only that div*/
+  background-attachment: fixed; /*Divs are still lined up. But bg-attachment, attach them to the top of the page. But as the div comes up. It reveals the div which reveals the actual image*/
+
+}
+
+.subSection{
+  height: 50%;
+  background-color: #fcd7c7;
+}
+
+.sectOne{
+  background-image: url("images/road.jpg");
+}
+
+.sectTwo{
+background-image: url("images/sea.jpg");
+}
+.sectThree{
+background-image: url("images/wallpaper.jpg");
+}
+.sectFour{
+background-image: url("images/Firework.jpg");
+}
+.top_nav{
+  float:left width 80px;
+  /*You given the container 1000px and the logo takes up 200px. So the nav will take up 800px*/
+
+}
+
+.top_nav ul li{
+  float: left;
+  padding: 6px 10px;
+
+  /*Or you can type: display inline-block;*/
+}
+
+
+}
+
+.footer_class{
+  clear: both;
+  text-align: center;
+}
