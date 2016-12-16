@@ -4,43 +4,90 @@
         <meta charset="utf-8">
         <title> Between The Brackets </title>
         <link rel="stylesheet" type="text/css" href="main.css">
-        <!--    <style type="text/css">
-            h1,p {
-                color: Red;
-                font-family: cursive;
-            }
-
-        <!-- </style> -->
     </head>
 
     <body>
-        <!--Puts entire website into a container div -->
-        <nav class="top_nav">
-            <ul class="list">
-                <li> <a href="link">Home</a> </li>
-                <li><a href="link">About</a></li>
-                <li> <a href="link">Tutorial</a> </li>
-                <li><a href="link">Downloads</a></li>
-            </ul>
-        </nav>
-        <!--My main body -->
-        <section>
-            <div class="sect sectOne">
-                <p class="intro"> Welcome to Herman's Homepage</p>
+        <header class="TopSection">
+            <div class="topbar">
+                <div class="logo">{Between The Brackets}</div>
+                <nav class="upperNav">
+                    <a href="#about" class="upperLink">About</a></li>
+                    <a href="#work" class="upperLink">Tutorial</a> </li>
+                    <a href="#contact" class="upperLink">Contact</a></li>
+                </nav>
+                <h1><span>Herman's Homepage</span></h1>
+                <p class="kicker">Thinker // Alpaca // Trying</p>
             </div>
-            <div class="subSection"></div>
-            <div class="sect sectTwo"></div>
-            <div class="subSection"></div>
-            <div class="sect sectThree"></div>
-            <div class="subSection"></div>
-            <div class="sect sectFour"></div>
+        </header>
 
+        <section>
+            <div class="aboutMe">
+                <h3 id="about">About Myself</h3>
+                <div class="flexcontainer">
+                    <img src="images/book.png" height="100" class="book" />
+                    <img src="images/pencil.png" height="100" class="pencil" />
+                    <img src="images/face.png" height="200" class="face" />
+                    <img src="images/clipboard.png" height="100" class="clipboard" />
+                    <img src="images/manifying.png" height="100" class="mani" />
+                </div>
+                <div class="textcontainer">
+                    <p class="aboutText"> <strong>I am currently a year 1 student in computing. </strong> I'll be posting my notes and revision materials that i have amassed during my time in NUS. I will be uploading some cheat sheets as well as explaination of concepts to
+                        allow people who were once in my position to better understand the subject. This blog is also an experiment of mine while i am self-learning webdesign. I hope i will be of help! </br>
+                        </br> P/S: Some answers/algorithms may not be optimized, feel free to e-mail me if you have any further suggestions</p>
+                </div>
+            </div>
+
+            <div class="workSection">
+                <h3 id="work">TUTORIALS</h3>
+                <div class="thumbnailcontainer">
+                    <a class="thumbnail1" href="">
+
+                        <div class="thumb-overlay">
+
+                            <div class="zoom-icon"></div>
+                        </div>
+
+                    </a>
+                    <a class="thumbnail2" href="">
+                        <div class="thumb-overlay">
+                            <div class="zoom-icon"></div>
+                        </div>
+                    </a>
+                    <a class="thumbnail3" href="">
+
+                        <div class="thumb-overlay">
+                            <div class="zoom-icon"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="social">
+                <h3 id="contact">CONTACT</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Herman.Wonggg" class="fb"></a>
+                    <a href="https://www.youtube.com/channel/UC_CT7PhAvD9ezXqKtZS2rrQ" class="youtube"></a>
+                    <a href="" class="email"></a>
+                </div>
+                <hr class="bar">
+                <h1 class="emailadd">herman_wong_km@outlook.com</h1>
+            </div>
 
         </section>
 
         <footer class="footer_class">
-            Copyright &copy Inspired Alpaca
+            <div class="logo">{Between The Brackets}</div>
+            <nav>
+                <a href="#about" class="bottomLink">About</a></li>
+                <a href="#work" class="bottomLink">Tutorial</a> </li>
+                <a href="#contact" class="bottomLink">Contact</a></li>
+            </nav>
+            <p class="copyright">Copyright &copy Inspired Alpaca</p>
+            <p class="quote">"Don't give up halfway through. At the end it's gonna make sense."</p>
         </footer>
+
+    </body>
+
 
     </body>
 

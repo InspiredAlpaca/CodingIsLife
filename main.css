@@ -1,102 +1,301 @@
-/*Get rid of all default padding and margin*/
-/*This selects all element of webpage*/
-*{
-  /*no margin at any side*/
+.topSection{
+  height: 450px;
+  background-image: url(images/road.jpg);
+  font-family:sans-serif;
+    background-size:cover;
 
-  margin: 0px;
-  padding 0px;
-  list-style-type: none;
-}
-
-h1,h2,h3,h4,h5,h6,p{
-  margin-bottom: 20px;
-}
-
-/*By default it does not have a height*/
-html,body{
-  height:100%;
-}
-
-/*we know all the images are 100% wide*/
-nav{
-  /*you loses your width when you set it to fixed*/
-  position: fixed;
-  height:50px;
-  width:100%;
-  background-color: rgba(0,0,0,.5);
-  z-index: 99; /*Make sure other things do not overlap*/
-    text-align: center;
 
 }
-.intro{
-  width: 80%;
-  position:absolute;
-  top:40%;
-  left:10%;
-  height:20%;
+
+.topbar{
+  height:43px;
   background-color: rgba(0,0,0,0.5);
-  font-size: 50px;
-  color:white;
-  text-align: center;
-  line-height:300%;
 }
 
-div nav ul{
-  text-align: center;
+/*----Logo---*/
+.logo{
+  height:auto;
+  width:auto;
+  float: left;
+  font-size:20px;
+  margin: 10px 0px 0px 10px;
+  color: white;
+  font-family: monospace;
+  font-weight: 800;
+  font-variant: normal;
+}
+
+/*-------Navigation bar----------*/
+nav{
+
+  float:right;
+  margin: 14px 15px 0px 0px;
+
 }
 
 nav a{
+  display: inline-block;
   margin-left: 20px;
   text-decoration: none;
-  font-style: normal;
-  color:#fff;
-  font-family: monospace;
-  font-size: 22;
-line-height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+nav a:hover{
+  color:rgba(255,255,255,1);
 }
 
-.sect{
-  height:100%;
-  background-size:cover;   /*make the background cover only that div*/
-  background-attachment: fixed; /*Divs are still lined up. But bg-attachment, attach them to the top of the page. But as the div comes up. It reveals the div which reveals the actual image*/
+/*-----Title---------*/
 
-}
-
-.subSection{
-  height: 50%;
-  background-color: #fcd7c7;
-}
-
-.sectOne{
-  background-image: url("images/road.jpg");
-}
-
-.sectTwo{
-background-image: url("images/sea.jpg");
-}
-.sectThree{
-background-image: url("images/wallpaper.jpg");
-}
-.sectFour{
-background-image: url("images/Firework.jpg");
-}
-.top_nav{
-  float:left width 80px;
-  /*You given the container 1000px and the logo takes up 200px. So the nav will take up 800px*/
-
-}
-
-.top_nav ul li{
-  float: left;
-  padding: 6px 10px;
-
-  /*Or you can type: display inline-block;*/
-}
-
-
-}
-
-.footer_class{
-  clear: both;
+header h1{
+  clear:both;
+  padding-top: 180px;
   text-align: center;
+  font-size:72px;
+  font-weight:700;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 10;
+}
+
+h1 span{
+  display:inline-block;;
+  border: white solid 10px;
+  padding: 0.2em 0.5em;
+
+}
+
+/*----Words below title------*/
+.kicker{
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5;
+  line-height: 0;
+
+}
+
+/*----About----*/
+.aboutMe{
+  background-color: #fff;
+  border: #fff 0.1px solid;
+}
+#about{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family:monospace;
+  text-align: center;
+  text-decoration: underline;
+  color:#996600;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+section .aboutText{
+  font-family: arial;
+  text-align: center;
+
+}
+
+.flexcontainer{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+img{
+
+  margin: 0 30px;
+
+
+}
+.face{
+  order: 1;
+}
+.mani{
+  order:4;
+}
+
+.clipboard{
+  align-items: center;
+}
+.book{
+  order: 2;
+}
+.pencil{
+  order:1;
+}
+
+.textcontainer{
+  max-width: 700px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  font-size:20;
+  text-align:right;
+  font-weight: 300;
+  color: #595959
+}
+
+/*-----Work Section--------*/
+.worksection{
+  background-color: #e5eaee;
+
+}
+
+#work{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family:monospace;
+  text-align: center;
+  text-decoration: underline;
+  color:#996600;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.thumbnailcontainer{
+  max-width: 960px;
+  margin:auto;
+  height:250px;
+  padding-bottom: 50px;
+
+}
+
+.thumbnail1{
+  display: block;
+  width: 188px;
+  height: 188px;
+  float:left;
+  background-image: url(images/html.png);
+  background-size: cover;
+  margin-left: 50px;
+}
+
+.thumbnail2{
+  display: block;
+  width: 188px;
+  height: 188px;
+  float:left;
+  background-image: url(images/cicon.png);
+  background-size: cover;
+  margin-left: 150px;
+}
+.thumbnail3{
+  display: block;
+  width: 188px;
+  height: 188px;
+  float:left;
+  background-image: url(images/java.png);
+  background-size: cover;
+  margin-left: 150px;
+}
+
+/*----Contact----*/
+
+.contact{
+  background-color: #fff
+}
+
+#contact{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family:monospace;
+  text-align: center;
+  text-decoration: underline;
+  color:#996600;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.social-links{
+  max-width: 700px;
+  margin: 0px auto 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fb{
+  display: block;
+  width: 64px;
+  height: 64px;
+  float:left;
+  background-image: url(images/fb.png);
+  background-size: cover;
+  margin-left: 30px;
+}
+
+.email{
+  display: block;
+  width: 64px;
+  height: 64px;
+  float:left;
+  background-image: url(images/a.png);
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.youtube{
+  display: block;
+  width: 64px;
+  height: 64px;
+  float:left;
+  background-image: url(images/youtube.png);
+  background-size: cover;
+  margin-left: -10px;
+}
+
+.bar{
+  width: 250px;
+  height: 0px;
+  border-top: 4px solid #996600;
+  margin: 0px auto 50px;
+}
+
+.emailadd{
+  display: block;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 300;
+  color:#996600;
+}
+/*-----footer-----*/
+.footer_class{
+  height:150px;
+
+  background-image: url(images/firework.jpg);
+  background-size: cover;
+}
+.bottomLink{
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+
+.copyright{
+  color:white;
+  clear: both;
+  text-transform:uppercase;
+  font-size:11px;
+  position:relative;
+  top: 100px;
+  padding-left: 10px;
+}
+
+.quote{
+  color:white;
+  font-style: oblique;
+  font-family: sans-serif;;
+  margin-left: 80%;
+  margin-top: 3%;
+  padding-right: 10px;
+  text-align: right;
+  float: left;
 }
